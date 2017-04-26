@@ -1,0 +1,14 @@
+buildReact {
+ 
+ // MODIFY THESE
+ slackChannel = '#ci-web'
+ buildCommand = 'npm install && npm run build'
+ baseURL = 'react-template'
+ buildDir = 'www'
+  
+ // MODIFY THESE ONLY IF YOU KNOW WHAT ARE YOU DOING 
+ bucketURL = "gs://${baseURL}.example.com/"
+ nodeEnv = '-e NODE_PATH=./app:./config -e NODE_ENV=production'
+ nodeImage = 'node:latest'
+ excludeDir = '.git'
+}
