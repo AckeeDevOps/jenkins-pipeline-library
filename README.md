@@ -10,15 +10,17 @@ this is our jenkins pipeline shared library for CI/CD to our Kubernetes cluster 
 * Slack
 
 ## Currently this repo supports
-* ReactJS @ Google Storage Buckets - check `templates/react/Jenkinsfile` and `var/buildReact`
+* ReactJS @ Google Storage Buckets - check `templates/react/Jenkinsfile` and `var/PipelineReact`
+* NodeJS @ Google Container Engine - check `templates/nodejs/Jenkinsfile` and `var/PipelineNodejs`
+* Middleman @ Google Storage Buckets + FTP - check `templates/middleman/Jenkinsfile` and `var/PipelineMiddleman`
+* Automated job generating w/ DSL seed job. check `Jenkinsfile` and `jobs/**/seed.groovy`
 
 ## Soon to be published
-* Middleman @ Google Storage Buckets and FTP
-* Node.js @ Kubernetes cluster
 * Wordpress @ Kubernetes cluster
 * Symfony @ Kubernetes cluster
 * Nette @ Kubernetes cluster
 
 # How to contribute
-* feel free to create a pull request
-* TODO: there is going to be a `Jenkinsfile` at root for testing
+* feel free to create a pull request or submit an issue
+
+Our production jenkins-pipeline-shared-library looks much different and is under development. I can't keep up with updating this upstream github repo. 
