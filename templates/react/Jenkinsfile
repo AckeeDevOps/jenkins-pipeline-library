@@ -1,4 +1,4 @@
-buildReact {
+PipelineReact {
  
  // MODIFY THESE
  slackChannel = '#ci-web'
