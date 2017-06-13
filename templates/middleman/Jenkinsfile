@@ -1,0 +1,23 @@
+PipelineMiddleman {
+  
+   // Define here
+  slackChannel = "#ci-middleman"
+  buildCommand = "bundle install --without test development postgres && bundle exec middleman build --verbose"
+  projectName = 'middleman-template'
+  buildDir = 'build'
+  
+  // Choose either Bucket or FTP and comment out the other block
+  
+  // BUCKET
+  baseURL = 'middleman-template'
+  
+  // FTP
+  //ftpHost = "FTP_HOST"
+  //ftpUser = "FTP_USER"
+  //ftpPassword = "FTP_PASSWORD"
+  
+  // DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING
+  domainURL = 'example.com'
+  myTestURL = "${baseURL}.${domainURL}"
+  
+}
