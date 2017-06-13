@@ -1,0 +1,14 @@
+PipelineNodejs{
+
+  // MODIFY THESE
+  projectName = 'node-template' 
+  slackChannel = '#ci-nodejs'
+  appName = 'node-template'
+  cloudProject = [development: 'dev-cluster-123', master: 'prod-cluster-456']
+  buildCommand = 'npm install && npm run postinstall'
+  
+  // MODIFY ONLY IF YOU KNOW WHAT YOU ARE DOING
+  nodeImage = 'node:7'
+  nodeEnv = "-e NODE_PATH=./app:./config"
+  nodeTestEnv = '-e NODE_ENV=test -e NODE_PATH=./app:./config'  
+}
