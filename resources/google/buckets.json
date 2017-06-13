@@ -1,0 +1,12 @@
+{
+  "backups": [
+    "abc-backups",
+    "def-backups",
+    "ghi-backups",
+    "jkl-backups",
+    "mno-prod-backups",
+    "prq-prod-backups",
+    "client-backups",
+    "test-backups"
+  ]
+}
