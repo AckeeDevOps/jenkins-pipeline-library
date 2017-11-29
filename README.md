@@ -19,6 +19,11 @@ this is our jenkins pipeline shared library for CI/CD to our Kubernetes cluster 
 * Wordpress @ Kubernetes cluster
 * Symfony @ Kubernetes cluster
 * Nette @ Kubernetes cluster
+* Backup pipeline jobs for mysql/mongodb pods in GKE
+* Google compute snapshots pipeline job
+* Android build job
+* iOS build job
+* Android/iOS/Node.js Merge Request builder jobs
 
 # How to contribute
 * feel free to create a pull request or submit an issue
