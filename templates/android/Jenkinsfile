@@ -1,0 +1,10 @@
+PipelineAndroid {
+  slackChannel = 'ci-android'
+
+  hockeyID='xxxxxx'
+
+  // beta is first because it is default
+  buildVariants = ["devApiBeta",  "devApiDebug", "preProdAApiDebug", "preProdAApiBeta", "preProdBApiDebug", "preProdBApiBeta", "prodApiDebug", "prodApiBeta", "prodApiRelease"]
+
+  mergeRequestBuildVariant = 'devApiBeta'
+}
