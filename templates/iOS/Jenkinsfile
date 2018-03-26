@@ -1,0 +1,5 @@
+PipelineIOS {
+  slackChannel = 'ci-ios'
+  hockeyID = 'xxxxx'
+  environments = ["Development", "Stage", "Production"]
+}
